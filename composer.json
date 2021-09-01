@@ -1,0 +1,19 @@
+{
+    "name": "aks-l/pension-fund",
+    "description": "PensionFund",
+    "authors": [
+        {
+            "name": "Helga Krasina",
+            "email": "helgakrasina@gmail.com"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "^8.0",
+      "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PensionFund\\": "src/"
+        }
+    }
+}

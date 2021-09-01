@@ -1,0 +1,37 @@
+
+/* ----------------- REGISTRATION ----------------- */
+
+#registration {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border: rgb(144, 144, 144) 1px solid;
+    width: 350px;
+    height: 550px;  
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translate(0, -50%); 
+}
+
+#authoTitle {
+    margin: 30px auto;
+}
+
+#positionInput {
+    width: 250px;
+    height: 40px;
+}
+
+#signIn{
+    margin: 30px auto 10px auto;
+}
+
+#registration a {
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    width: 70px;
+    height: 30px;    
+    line-height: 20px;
+}

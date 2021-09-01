@@ -1,0 +1,9 @@
+AddDefaultCharset utf-8
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ ./index.php [QSA]
+
+<Files />
+    AddType application/x-httpd-php .html .css
+</Files>

@@ -1,0 +1,545 @@
+/* ----------------- COMMON ----------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+*, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #2D3245;
+}
+
+.clear {
+    clear: both;
+}
+
+input, button, a {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+button, a, td > i {
+    cursor: pointer !important;
+}
+
+/* ----------------- AUTHORIZATION & REGISTRATION ----------------- */
+
+/*
+    #FFC540 желтый
+    #BC3F3D красный
+    #2D3245 синий
+    #F1957E розовый
+*/
+
+option {
+    color: white;
+    background-color: rgb(34, 36, 36);
+}
+
+.authAndRegBlock {
+    position: absolute;
+    background-color: transparent;
+    border: #2D3245 1px solid;
+    border-radius: 3rem;
+    /* border-left: rgba(255,192,108,0.74); */
+    width: 250px;
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+.authAndRegBlock h1 {
+    font-size: 2.5rem;
+    margin: 20px auto 60px auto;
+}
+
+.authAndRegBlock h3 {
+    text-align: left;
+    font-size: 14px;
+}
+
+.authAndRegBlock p {
+    font-size: 12px;
+}
+
+.authAndRegBlock a {
+    font-size: 1.5rem;
+    transition: opacity ease-in-out .2s;
+}
+
+.authAndRegBlock a:hover {
+    opacity: .8;
+}
+
+.authAndRegBlock #logIn {
+    margin-bottom: 1.5rem;
+}
+
+.authAndRegBlock .addElement,
+.authAndRegBlock .primaryBtn {
+    width: 100%;
+}
+
+
+/*--- Blocks ---*/
+
+#regBlock, #authBlock {
+    /* padding: 20px;
+    padding-bottom: 40px; */
+
+    padding: 20px 50px 40px 50px;
+}
+
+#regBlock h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#signIn {
+    margin: 30px auto 10px auto;
+}
+#logIn {
+    margin: 40px auto;
+}
+
+/* ----------------- MENU ----------------- */
+
+.menu {
+    margin-left: 0;
+    padding: 0;
+    padding-top: 4rem;
+    height: 100vh;
+    width: 20%;    
+    background-color: transparent;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    transition: ease-in-out .2s;
+    float: left;
+}
+
+.menu nav {
+    display: block;
+    box-sizing: border-box;
+    margin-left: 0;
+    width: 100%;
+    height: 450px;
+    padding: 20px 20px;
+}
+
+.menu h1 {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.menu h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.navLink {
+    display: block;
+    border: 2px solid #FFC540;
+    border-radius: 3rem;
+    color: #FFC540;
+    font-family: roboto;
+    font-size: 1rem;
+    font-weight: 100;
+    overflow: hidden;
+    padding: .5rem 1rem;
+    position: relative;
+    text-decoration: none;
+    transition: .2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+
+    margin-bottom: .5rem;
+}
+  
+  
+.navLink::after {
+    background-color: #FFC540;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+    
+    
+.navLink:hover::after {
+    transform: translate(0, 0);
+}
+    
+    
+.navLink:hover {
+    border: 2px solid transparent;
+    color: #2D3245;
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+/* .navLink {    
+    display: block;
+    box-sizing: border-box;  
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: left;
+    color: #141549;
+    background-color: #cecece;
+    padding-left: 20px;
+    line-height: 50px;
+    cursor: pointer;
+    margin-bottom: 5px;
+
+    width: 100%;
+    height: 50px;
+}
+
+.navLink:hover,
+.navLink:hover i {
+    background-color:#fff;
+    transition: all .2s ease-in-out; 
+} */
+
+
+
+/* ----------------- CONTENT ----------------- */
+
+.wrapper {
+        
+    box-sizing: border-box;
+    background-color: transparent;
+    max-width: 0 0;
+
+    background: linear-gradient(45deg, rgba(45, 50, 69, .8), rgba(188, 63, 61, .5));
+}
+
+.content-bl {
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;        
+    position: relative;
+}
+
+
+.content {
+    /* margin: 0 auto; */
+    padding: 0;
+    padding-top: 4rem;
+    min-height: calc(100vh - 4rem);
+    width: 100%;
+    text-align: center;        
+    position: relative;
+    background: url("/src/images/courses-bg.png");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.insideContent {
+    position: relative;
+    width: 70%;
+    margin-left: 20%;
+    /* height: 100vh; */
+    box-sizing: border-box;
+}
+
+/* ----------------- GENERAL BUTTONS ----------------- */
+
+.primaryBtn, .ghostBtn {
+    background-color: transparent;
+    border-radius: 3rem;
+    font-family: roboto;
+    font-size: 1.2rem;
+    font-weight: 400;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    text-decoration: none;
+    transition: .2s all ease-in-out;
+    will-change: transform;
+    z-index: 0;
+
+    cursor: pointer;
+
+    width: max-content;
+}
+
+.primaryBtn {
+    border: 2px solid #BC3F3D;
+    color: #BC3F3D;
+}
+
+.ghostBtn {
+    border: 2px solid #2D3245;
+    color: #2D3245;
+}
+    
+.primaryBtn:hover,
+.ghostBtn:hover {
+    border: 2px solid transparent;
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+.primaryBtn:hover {
+    background-color: #FFC540;
+    color: #2D3245;
+}
+
+.ghostBtn:hover {
+    background-color: #2D3245;
+    color: #BC3F3D;
+}
+
+/* ----------------- ADD DATA FORM ----------------- */
+
+.addDataForm {
+    display: block;
+
+    width: 50%;
+    margin-top: 50px;
+    margin-right: 0;
+    padding: 2rem 2rem;
+    border: 1px solid #2D3245;
+    border-radius: 3rem;
+    color: #2D3245;
+}
+
+/* -- Titles -- */
+
+.addDataForm h2 {
+    margin: 0 auto 20px auto;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.addDataForm h3 {
+    margin: 15px auto 0 auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+
+    display: inline-block;
+    width: 70%;
+}
+
+/* -- Inputs -- */
+
+.addElement {
+    display: block;
+    margin: 10px auto;
+    padding-left: 1rem;
+
+    width: 70%;
+    height: 3rem;
+
+    font-size: 1.5rem;
+
+    box-sizing: border-box;
+
+    border: rgb(214, 214, 214) 1px solid;
+    border-radius: 1rem;
+
+    color: rgb(37, 37, 37);
+}
+
+.addElement:active, .addElement:focus {    
+    border: #2D3245 2px solid;
+    /* border-radius: 4px; */
+    color: rgb(37, 37, 37);
+}
+
+
+/* -- Checkbox List -- */
+
+.addDataFormCheckboxList {
+    display: block;
+    background-color: white;
+}
+
+.addDataFormCheckboxListElement {    
+    display: block;
+    margin-left: 25px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.addDataFormCheckboxList input {
+    margin-left: 0px;
+}
+
+.addDataFormCheckboxList label {     
+    margin-left: 5px;
+}
+
+.addFormBtn {
+    display: block;
+    margin: 10px auto;
+    width: max-content;
+}
+
+/* -- Links & Buttons -- */
+
+.addDataForm button {
+    margin-top: 20px;
+}
+
+/* .addDataForm a {
+    display: block;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;    
+    margin: 10px auto 0px auto;
+    text-decoration: none;
+    font-size: 12px;
+} */
+
+/* ----------------- SEARCH ----------------- */
+
+.search {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3rem;
+    margin: 30px auto 10px auto;
+    padding-left: 2rem;
+    border-radius: 1rem;
+    border: rgb(203, 202, 252) 1px solid;
+    color: rgb(37, 37, 37);
+
+    font-size: 1.5rem;
+}
+
+.search:active, .search:focus {    
+    border: #2D3245 2px solid;
+    /* border-radius: 4px; */
+}
+
+/* ----------------- TABLES ----------------- */
+
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: rgba(255, 197, 64, .8);
+    color: #2D3245;
+    padding: 16px;
+    border-radius: 3rem;
+
+    width: 100%;
+}
+
+th, td {
+    border-radius: 1rem;
+}
+
+th {
+    color: #2D3245;
+    font-size: 18px;
+    padding: 10px;
+}
+
+td {
+    color: #2D3245;
+    background: rgba(188, 63, 61, .7);
+    padding: 10px;
+}
+
+/*-------*/
+
+.selectFromTableTd {
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    width: 90px;
+}
+
+/* ----------------- TABLE BUTTONS ----------------- */
+.actionBtnTd i {
+    color: rgb(49, 49, 49);
+    transition: all .3s ease-in-out;
+}
+
+.actionBtnTd:hover i {
+    color: rgb(122, 122, 122);
+    transform: scale(1.3);
+}
+
+/*-------*/
+
+.selectFromTableBtn {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 32px;        
+    color: rgb(49, 49, 49);
+    font-weight: lighter;
+    font-size: 12px;
+    background-color:  rgba(255,192,108,0.74);
+    border: none;
+    margin: 0 0;  
+    text-decoration: none;
+    line-height: 32px;
+    text-align: center;
+}
+
+/* ----------------- TABLE LOADER ----------------- */
+
+#loader {
+    background-image: url(../images/loader.gif);
+    background-repeat: no-repeat;
+    display: block;    
+    margin: 10px auto 0 auto;
+    height: 64px;
+    width: 64px;
+}
+
+/* ----------------- TABLE REPORTS ----------------- */
+
+.reportBtn {
+    margin-right: 0;
+}
+
+/* ----------------- BUTTONS NEW ----------------- */
+
+#addNewBtn {
+    margin-right: 30px;
+}
+
+#addNewBtn, .reportBtn {
+    float: right;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
